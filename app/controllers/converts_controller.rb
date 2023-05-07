@@ -5,7 +5,6 @@ class ConvertsController < ApplicationController
 
   def index
     input = params_value[:data]
-    p "out #{input.class}" 
     if create_employee?(input)
       result = convert_to_csv(input)
       render plain: result, status: :ok
@@ -23,7 +22,7 @@ class ConvertsController < ApplicationController
   private
 
   def params_value
-    params.require(:data)
-    params.permit(data: %i[id fname lname company position salary])
+      params.require(:data)
+      params.permit(data: %i[id fname lname company position salary])
   end
 end

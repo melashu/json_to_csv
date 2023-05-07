@@ -3,7 +3,7 @@ require 'rails_helper'
 
 RSpec.describe 'ModelToHash' do
   before :all do
-    Employee.create([{ fname: 'Meshu', lname: 'Amare', salary: 2300, company: 'xy', position: 'Rails devloper' }])
+    Employee.create([{ fname: 'Meshu', lname: 'Amare', salary: 2300, company: 'Radar Cyber Security', position: 'Rails devloper' }])
     @employe = DummyConvert.new
   end
   context 'When ActiveRecord relation is fetched' do
