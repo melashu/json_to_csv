@@ -52,7 +52,8 @@ To get a local copy up and running, follow these steps
 ### Prerequisites
 
 - Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- Install [Ruby on Rails](https://rubyinstaller.org/)
+- Install [Ruby version 3.1.2(2022-04-12 revision)](https://rubyinstaller.org/)
+- Open your terminal and install rails using `gem install rails`
 - Install [Postman](https://www.postman.com/downloads/) or other API testing tool
 - Install [Visual Studio Code](https://code.visualstudio.com/download) or other code editor
 
