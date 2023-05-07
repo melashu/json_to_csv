@@ -19,11 +19,11 @@ RSpec.describe 'ConvertToCsv' do
   end
   context 'When we pass array of hash' do
     data = [{
-      fname: 'Meshu',
-      lname: 'Amare'
+      fname: 'Norbert',
+      lname: 'Szivós'
     }]
     it 'it should return data in CSV format' do
-      expect(@convert.convert_to_csv(data)).to eq("fname,lname\nMeshu,Amare")
+      expect(@convert.convert_to_csv(data)).to eq("fname,lname\nNorbert,Szivós")
     end
   end
 end
