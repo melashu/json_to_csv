@@ -67,6 +67,8 @@ cd `json_to_csv`
 
 Run `bundler install`
 
+Run `rails db:migrate`
+
 Run `rails server` or `rails s`
 
 ### Usage
@@ -111,7 +113,7 @@ Under body section select raw, then copy and put the following JSON formated dat
 ````
 Then click `send` button 
 
-> NB: Dont forget the objects must have `fname`, `lname`, `salary`, `company`, and `position` attributes as keys. Otherwise, the server will responed `Either the id is duplicted or invalid format,try /convert/previous to see previous data` but you can leave `id` attribute
+> NB: Dont forget the objects must have `fname`, `lname`, `salary`, `company`, and `position` attributes as keys. Otherwise, the server will responed `Either the id is duplicted or invalid format,try /convert/previous to see previous data` but you can leave `id` attribute. In addition to this, make sure the request format is JSON
 
 The response looks like 
 
@@ -146,5 +148,6 @@ Run
 
 - [ ] Add more model validation like checking the length of character, salary must be number
 - [ ] Allow the API to convert any json formated object
+- [ ] Add API version 
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
